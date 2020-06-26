@@ -10,12 +10,12 @@ adobe XDのデザインカンプからコーディングを行い、PerfectPixel
 
 <h2>コーディングした上でのポイント</h2>
 <p>
-・「Swiper」にてスライダーを実装
-・「WOW」にてアニメーションを実装
-・ドロワーの自作
-・jQueryを用いたページ内リンクの設置
-・jQueryを用いたアコーディオンの設置
-・GoogleMap（iframe）の埋め込み
+・「Swiper」にてスライダーを実装<br>
+・「WOW」にてアニメーションを実装<br>
+・ドロワーの自作<br>
+・jQueryを用いたページ内リンクの設置<br>
+・jQueryを用いたアコーディオンの設置<br>
+・GoogleMap（iframe）の埋め込み<br>
 </p>
 
 <h2>使用言語</h2>
