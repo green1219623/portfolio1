@@ -12,7 +12,7 @@ adobe XDのデザインカンプからコーディングを行い、PerfectPixel
 <p>
 ・「Swiper」にてスライダーを実装<br>
 ・「WOW」にてアニメーションを実装<br>
-・ドロワーの自作<br>
+・Queryを用いたドロワーの設置<br>
 ・jQueryを用いたページ内リンクの設置<br>
 ・jQueryを用いたアコーディオンの設置<br>
 ・GoogleMap（iframe）の埋め込み<br>
