@@ -1,0 +1,74 @@
+.top-image {
+    height: 648px;
+    max-width: 100%;
+    background: transparent url(../../img/mv.png) no-repeat top center/cover;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+
+    @include mq("sp") {
+        background-position:24% 30%;
+        width: auto;
+        height: 667px;
+        &.is-checked {
+            transform: translateX(-300px);
+        }
+    }
+}
+
+.top-image-text {
+    position: absolute;
+    top: 220px;
+    right: 109px;
+    width: 524px;
+
+    @include mq("sp") {
+    width: 343px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    }
+}
+
+.top-title {
+    color: $base-font-color;
+    font-size: 30px;
+    font-weight: bold;
+    
+    @include mq("sp") {
+        font-size: 24px;
+        line-height: 45px;
+            }
+}
+
+.top-text {
+    font-size: 18px;
+    margin: 30px 0 40px 0;
+
+    @include mq("sp") {
+        font-size: 16px;
+        margin: 30px 0 40px 0;
+        width: 335px;
+            }
+}
+
+.top-btn-wrapper{
+    @include mq("sp") {
+        text-align: center;
+            }
+}
+
+.top-btn {
+    @include button(18px);
+    padding: 14px 48px;
+
+    @include mq("sp") {
+        font-size: 18px;
+        padding: 13px 24px;
+            }
+}

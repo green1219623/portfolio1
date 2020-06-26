@@ -1,0 +1,30 @@
+.section-card {
+  background-color: #EFEFEF;
+}
+
+.card-inner {
+  margin-top: 60px;
+}
+
+.card-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-top: 10px;
+}
+
+.card {
+  width: 30%;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.card-img {
+  border-radius: 4px;
+}
+/*# sourceMappingURL=card.css.map */

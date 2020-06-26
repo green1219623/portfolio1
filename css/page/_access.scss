@@ -1,0 +1,193 @@
+.access-section {
+    background-color: $bg-color-gray;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    padding-bottom: 220px;
+
+    @include mq("tab") {
+        padding-bottom: 80px;
+    }
+
+    @include mq("sp") {
+        padding-bottom: 350px;
+    }
+    &.is-checked {
+        transform: translateX(-300px);
+    }
+
+    h2 {
+        color: white;
+        margin: 40px 0;
+        z-index: 3;
+
+        @include mq("tab") {
+            margin: 40px 0;
+        }
+
+        @include mq("sp") {
+            margin: 40px 0;
+        }
+    }
+}
+
+.access-flex {
+    display: flex;
+    justify-content: center;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.adjust-box {
+    position: relative;
+    width: 35%;
+    height: auto;
+
+    @include mq("tab") {
+        width: 40%;
+    }
+
+    @include mq("sp") {
+        width: 90%;
+        margin: auto;
+        height: 30%;
+    }
+}
+.box-1x1:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+
+    @include mq("sp") {
+        display: none;
+    }
+}
+
+.access-wrapper {
+    color: white;
+    margin: auto;
+    z-index: 2;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include mq("sp") {
+        width: 90%;
+        margin: auto;
+        height: 100%;
+    }
+}
+
+.iframe-wrap {
+    position: relative;
+    width: 55%;
+    padding-top: 30%; /* = height ÷ width × 100 */
+    z-index: 2;
+
+    @include mq("tab") {
+        width: 55%;
+        padding-top: 20%;
+    }
+
+    @include mq("sp") {
+        position: relative;
+        width: 90%;
+        padding-top: 60%; /* = height ÷ width × 100 */
+        margin: auto;
+        top: 200px;
+    }
+}
+.iframe-wrap iframe {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include mq("tab") {
+        top: 40px;
+    }
+
+    @include mq("sp") {
+        top: 0px;
+    }
+}
+
+.access-bg {
+    background-color: $base-font-color;
+    position: absolute;
+    top: 0;
+    height: 70%;
+    width: 80%;
+    z-index: 1;
+
+    @include mq("tab") {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.accsess-p {
+    @include mq("tab") {
+        font-size: 14px;
+    }
+}
+.access-btn {
+    @include button(20px);
+    background-color: $base-font-color;
+    border-radius: 0px;
+    border: 1px solid #ffffff;
+    color: white;
+    font-family: $english-font-family;
+    letter-spacing: 4px;
+    margin-top: 40px;
+    padding: 20px 86px;
+
+    &:hover{
+        background-color: #fff;
+        color: $base-font-color;
+    }
+
+    @include mq("tab") {
+        font-size: 14px;
+        padding: 16px 65px;
+    }
+    &.btn-dn {
+        @include mq("sp") {
+            display: none;
+            text-align: center;
+            position: relative;
+            top: 300px;
+            font-size: 18px;
+            padding: 16px 100px;
+        }
+    }
+}
+
+.btn-db-wrapper {
+    @include mq("sp") {
+        margin: auto;
+    }
+}
+
+.access-btn {
+    &.btn-db {
+        display: none;
+
+        @include mq("tab") {
+            display: none;
+        }
+        @include mq("sp") {
+            display: inline-block;
+            width: 100%;
+            position: absolute;
+            bottom: -80px;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,177 @@
+footer {
+    background-color: $base-font-color;
+    color: $footer-font-color;
+    height: 100%;
+    padding: 9rem 7rem;
+    padding-bottom: 7rem;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+    &.is-checked {
+        transform: translateX(-300px);
+    }
+
+    @include mq("tab") {
+        padding: 7rem 5rem;
+    }
+
+    @include mq("sp") {
+        padding: 3rem 1rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+// フッター左
+.footer-left {
+    a {
+        color: $footer-font-color;
+    }
+}
+
+// アイコン
+.my-big {
+    font-size: 3rem;
+
+    @include mq("sp") {
+        font-size: 2.5rem;
+    }
+}
+
+.footer-twitter {
+    margin-right: 20px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        opacity: 0.7;
+    }
+
+    @include mq("sp") {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.footer-facebook {
+    transition: all 0.3s ease 0s;
+    &:hover {
+        opacity: 0.7;
+    }
+
+    @include mq("sp") {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.icon-wrapper {
+    @include mq("sp") {
+        display: flex;
+    }
+}
+
+// 詳細
+.footer-detail-wrapper {
+    margin-top: 40px;
+    @include mq("sp") {
+        display: flex;
+        font-size: 14px;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+}
+
+.footer-detail {
+    transition: all 0.3s ease 0s;
+    &:hover {
+        opacity: 0.7;
+    }
+    margin: 20px 0;
+    @include mq("sp") {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.detail-100 {
+    @include mq("sp") {
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+
+.footer-right {
+    margin-top: 4.3rem;
+    @include mq("sp") {
+        margin-top: 2rem;
+    }
+}
+
+// ロゴ
+.corp-name {
+    font-size: 2.1rem;
+
+    @include mq("sp") {
+        width: 100%;
+        text-align: center;
+        margin-top: 0px;
+    }
+}
+.sub-corp {
+    font-size: 0.75rem;
+
+    @include mq("sp") {
+        text-align: center;
+    }
+}
+
+// トップボタン
+.floating {
+    position: fixed;
+    right: 7rem;
+    bottom: 3rem;
+    display: none;
+    opacity: 1;
+    z-index: 39;
+    transition: all 0.5s ease 0s;
+    &.is-checked {
+        transform: translateX(-300px);
+    }
+
+    @include mq("sp") {
+        right: 1rem;
+        bottom: 1rem;
+    }
+}
+.floating a {
+    display: block;
+    color: $footer-font-color;
+    cursor: pointer;
+    padding: 8px;
+    text-decoration: none;
+    position: relative;
+    opacity: 1;
+    z-index: 39;
+    &.is-checked {
+        display: none;
+    }
+
+    img {
+        z-index: 39;
+        position: relative;
+        &.is-checked {
+            display: none;
+        }
+    }
+}
+.floating a:hover {
+    transition: all 0.3s ease 0s;
+    opacity: 0.7;
+}
